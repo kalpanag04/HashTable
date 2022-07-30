@@ -40,8 +40,18 @@ namespace HashTableDemo
                 {
                     linkedList.Remove(foundItem);
                 }
+            }
 
-
+            public bool isEmpty()
+            {
+                if (GetSize() <= 0)
+                    return true;
+                else
+                    return false;
+            }
+            public int GetSize()
+            {
+                return size;
             }
             public V Get(K key)
             {
@@ -74,11 +84,11 @@ namespace HashTableDemo
                 return linkedList;
             }
         }
-    public struct KeyValue<k, v>
-    {
-         public k Key { get; set; }
-         public v Value { get; set; }
-    }
 
-    
+        public struct KeyValue<k, v>
+        {
+            public k Key { get; set; }
+            public v Value { get; set; }
+        }
+
 }
