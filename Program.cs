@@ -13,6 +13,7 @@ public class Program
         hash.Add("3", "not");
         hash.Add("4", "to");
         hash.Add("5", "be");
+        
         string hash5 = hash.Get("5");
         Console.WriteLine("5th index value: " + hash5);
         string hash2 = hash.Get("2");
